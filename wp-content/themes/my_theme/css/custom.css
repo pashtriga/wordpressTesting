@@ -1,0 +1,151 @@
+
+@keyframes show-header {
+    0% {
+        top: -43px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+nav {
+    background: #000000;
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);
+    background: linear-gradient(to bottom, #434343, #000000);
+    border-bottom: 1px solid grey;
+    position: relative;
+    top: 0;
+}
+
+nav .logo {
+    width: 200px;
+    float: left;
+    padding: 20px 0;
+    margin-left: 10px;
+}
+
+nav .nav-bars {
+    color: #ffffff;
+    float: right;
+    cursor: pointer;
+    padding: 20px 20px;
+    display: inline-block;
+    font-size: 36px;
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: show-header 0.5s linear;
+}
+
+nav ul {
+    float: right;
+    z-index: 999;
+    list-style: none;
+    clear: both;
+    width: 100%;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #95a5a6;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+footer .copyright {
+    text-align: center;
+}
+
+footer .copyright p {
+    padding: 20px;
+}
+
+.containeri .footer-nav {
+    margin-left: 35px;
+}
+
+.containeri .footer-nav ul li a {
+    font-size: 17px;
+}
+
+
+@media screen and (min-width:450px) {
+    .features .one-third {
+        width: 50%;
+    }
+    .features .one-third:last-of-type {
+        float: none;
+        margin: auto;
+    }
+    .gallery.gallery-item {
+        width: 50%;
+    }
+    .contact .one-half {
+        width: 50%;
+    }
+    .containeri {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .containeri .socialMedia {
+        margin-right: 0px;
+    }
+    nav ul{
+        margin-right: -0;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    nav .nav-bars {
+        display: none;
+    }
+    nav ul {
+        padding: 20px 0;
+        clear: none;
+        width: auto;
+        display: inline-block !important;
+    }
+    nav ul li {
+        float: left;
+        border: none;
+    }
+    .features .one-third {
+        width: 33.33%;
+    }
+    .features .one-third:last-of-type {
+        float: left;
+    }
+    .gallery .gallery-item {
+        width: 33.33%;
+    }
+    .contact .container {
+        padding: 30px;
+    }
+    .contact .one-half {
+        width: 50%;
+    }
+    .containeri {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .containeri .socialMedia {
+        margin-right: 35px;
+    }
+    nav ul{
+        margin-right: -100px;
+    }
+}
